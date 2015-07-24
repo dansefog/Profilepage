@@ -3,11 +3,12 @@
 <head>
   <meta charset = "utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/lightbox.css" type="text/css" rel="stylesheet" media="all" />
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel="stylesheet" type="text/css">
 <title>Clan's profile</title>
 </head>
 
-<body background="image/yoake.jpg">
+<body background="images/yoake.jpg">
   <!-- メニュー -->
   <header>
     <h1><a href="index.html">Clan's Profile</a></h1>
@@ -16,7 +17,7 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#like">LIKE</a></li>
-        <li><a href="#Portfolio">PORTFOLIO</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
@@ -42,7 +43,7 @@
     <h1 class="title">LIKE</h1>
     <section class="panel">
       <h2>Star Watching</h2>
-      <img src="image/boenkyo.png" class="panel-icon">
+      <img src="images/boenkyo.png" class="panel-icon">
       <p>
         夜空に浮かぶ星を眺めたり、星座をたどったりするのが好きです。<br>
         大学では天文研究会に所属しており、
@@ -51,7 +52,7 @@
     </section>
     <section class="panel">
       <h2>Photo</h2>
-      <img src="image/camera.png" class="panel-icon">
+      <img src="images/camera.png" class="panel-icon">
       <p>
         どこかへお出かけするときには、必ずと言っていいほどカメラを持っていきます。愛機はFujiのX-A1。<br>
         最近は星空撮影に挑戦中。<br>
@@ -60,7 +61,7 @@
     </section>
     <section class="panel">
       <h2>Programming</h2>
-      <img src="image/programing.png" class="panel-icon">
+      <img src="images/programing.png" class="panel-icon">
       <p>
         授業や研究、趣味でいろいろなプログラムを書いてきました。<br>
         ちょっとしたツールを作ったり、ゲームを作ったり…<br>
@@ -69,20 +70,31 @@
     </section>
   </section>
 
-  <!--portfolio-->
+  <!--portfolio(lightboxプラグインを使って詳細をポップアップ表示)-->
   <section id="portfolio" class="site-width" class="clearfix">
     <h1 class="title">Portfolio</h1>
     <section class="panel portfolio-panel">
-      <img src="image/brank.png" class="panel-icon portfolio-panel-icon">
+      <a href="images/brank.png" rel="lightbox"><img src="images/ARshooting_s.png" class="panel-icon portfolio-panel-icon"></a>
       <p>ARシューティング</a>
     </section>
     <section class="panel portfolio-panel">
-      <img src="image/brank.png" class="panel-icon portfolio-panel-icon">
+      <a href="images/brank.png" rel="lightbox"><img src="images/mohou_s.png" class="panel-icon portfolio-panel-icon"></a>
       <p>手先動作模倣システム</a>
     </section>
     <section class="panel portfolio-panel">
-      <img src="image/brank.png" class="panel-icon portfolio-panel-icon">
+      <a href="images/brank.png" rel="lightbox"><img src="images/yubisasi_s.png" class="panel-icon portfolio-panel-icon"></a>
       <p>指さし先共有システム</a>
+    </section><section class="panel portfolio-panel">
+      <a href="images/brank.png" rel="lightbox"><img src="images/robocon_s.png" class="panel-icon portfolio-panel-icon"></a>
+      <p>ロボットコンテスト</a>
+    </section>
+    <section class="panel portfolio-panel">
+      <a href="images/brank.png" rel="lightbox"><img src="images/yasai_s.png" class="panel-icon portfolio-panel-icon"></a>
+      <p>人面野菜化計画</a>
+    </section>
+    <section class="panel portfolio-panel">
+      <a href="images/brank.png" rel="lightbox"><img src="images/seizu_s.png" class="panel-icon portfolio-panel-icon"></a>
+      <p>星図表示</a>
     </section>
   </section>
 
@@ -92,5 +104,8 @@
 <footer>
   <a href="index.html">上へ</a>
 </footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="lightbox.js" type="text/javascript"></script>
 
 </html>
